@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <LangVersion>7.2</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Configurations>Debug;Release;Development_Luxfacta</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.2.6" />
+    <PackageReference Include="Novell.Directory.Ldap.NETStandard" Version="2.3.8" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SBEISK.SGM.CrossCutting.Configurations\SBEISK.SGM.CrossCutting.Configurations.csproj" />
+    <ProjectReference Include="..\SBEISK.SGM.CrossCutting.Utils\SBEISK.SGM.CrossCutting.Utils.csproj" />
+    <ProjectReference Include="..\SBEISK.SGM.Domain\SBEISK.SGM.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
